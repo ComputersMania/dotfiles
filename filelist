@@ -1,0 +1,11 @@
+.config/compton/compon.conf
+.config/i3/config
+
+.config/ranger/rc.conf
+.config/ranger/rifle.conf
+
+.config/rofi/config.rasi
+
+.config/scripts/volume.sh
+
+.config/termite/config

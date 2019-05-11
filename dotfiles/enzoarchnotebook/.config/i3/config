@@ -11,7 +11,7 @@
 
 # Startup scritps 
 exec --no-startup-id setxkbmap it #To be changed to allow switching keyboard layouts
-exec --no-startup-id xinput set-prop 12 286 1
+exec --no-startup-id synclient TapButton1=1
 #exec --no-startup-id .config/scripts/volume.sh
 exec --no-startup-id compton
 exec --no-startup-id feh --bg-fill Immagini/wallpaper-mc.jpg
@@ -134,7 +134,7 @@ set $ws10 "10 "
 
 # Custom workspace assignments for specific clients
 #assign [class="Termite"] → number $ws1
-assign [window_role="browser"] → number $ws3
+assign [class="Vivaldi-stable"] → number $ws3
 assign [class="Olive"] → number $ws5
 assign [class="Gimp"] → number $ws6
 assign [class="qtwebflix"] → number $ws9
@@ -246,5 +246,9 @@ client.urgent		$yellow $yellow $foctext dafult $yellow
 # Window specific theming
 for_window [Class="Spotify"] border none
 for_window [class="KeeWeb"] border none
+for_window [class="code-oss"] border none
 for_window [class="qtwebflix"] border none
+for_window [class="Atom"] border none
+for_window [class="Chromium"] border none
+
 for_window [class="qtwebflix"] fullscreen enable
